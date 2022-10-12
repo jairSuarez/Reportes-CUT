@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/cut (1).ico">
     <link rel="stylesheet" href="/css/registro/style.css">
+    <link rel="stylesheet" href="/css/navbar/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,37 @@
     <title>Registro</title>
 </head>
 
-<iframe class="footer" src="/html/navbar/index.html" frameborder="0"></iframe>
+<body>
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">Reportes CUT</h1>
 
-<body background="/img/try.svg">
+            <ul class="menu__links">
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">Menu <img src="/assets/arrow.svg" alt="" class="menu__arrow"></a>
+
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Iniciar Sesion</a>
+                        </li>
+
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Registrate</a>
+                        </li>
+
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">About</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src="/assets/menu.svg" class="menu__img">
+            </div>
+
+        </section>
+    </nav>
 
     <form action="" method="POST" id="form">
         <div class="form">
@@ -59,4 +88,7 @@
         </div>
     </form>
 </body>
+
+<script src="/js/navbar/app.js"></script>
+
 </html>
