@@ -7,14 +7,43 @@
     <link rel="icon" href="/img/cut (1).ico">
     <title>Reportes CUT</title>
     <link rel="stylesheet" href="/css/inicio sesion/style.css">
+    <link rel="stylesheet" href="/css/navbar/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">Reportes CUT</h1>
 
-    <iframe class="footer" src="/html/navbar/index.html" frameborder="0"></iframe>
+            <ul class="menu__links">
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">Menu <img src="/assets/arrow.svg" alt="" class="menu__arrow"></a>
+
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Iniciar Sesion</a>
+                        </li>
+
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Registrate</a>
+                        </li>
+
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">About</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src="/assets/menu.svg" class="menu__img">
+            </div>
+
+        </section>
+    </nav>
 
     <main class="main">
         <section class="main__section">
@@ -46,6 +75,8 @@
         </section>
 
     </main>
+
+    <script src="/js/navbar/app.js"></script>
 
 </body>
 </html>
