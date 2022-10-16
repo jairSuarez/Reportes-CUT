@@ -86,7 +86,8 @@ form > a{
 
 .form__label{
     color: var(--color);
-    cursor: pointer;
+    /*cursor: pointer;*/
+    cursor: text;
     position: absolute;
     top: 0;
     left: 5px;
@@ -113,4 +114,5 @@ form > a{
     border-radius: .6em;
     background-color: #000;
     color: #fff;
+    cursor: pointer;
 }
