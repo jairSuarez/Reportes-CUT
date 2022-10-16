@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/cut (1).ico">
-    <title>Reportes CUT</title>
-    <link rel="stylesheet" href="/css/inicio sesion/style.css">
+    <link rel="stylesheet" href="/css/registro/style.css">
     <link rel="stylesheet" href="/css/navbar/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/img/try.svg">
+    <title>Registro</title>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 
             <ul class="menu__links">
                 <li class="menu__item menu__item--show">
-                    <a href="" class="menu__link">Menu <img src="/assets/arrow.svg" alt="" class="menu__arrow"></a>
+                    <a href="#" class="menu__link">Menu <img src="/assets/arrow.svg" alt="" class="menu__arrow"></a>
 
                     <ul class="menu__nesting">
                         <li class="menu__inside">
@@ -45,42 +46,49 @@
         </section>
     </nav>
 
-    <main class="main">
-        <section class="main__section">
-            <form class="form">
-                <div class="form__group">
-                    <input type="text" placeholder=" " class="form__input">
+    <form action="" method="POST" id="form">
+        <div class="form">
+            <div class="grupo">
+                <input type="text" name="" id="name" required><span class="barra"></span>
+                <label for="">Nombre Completo</label>
+            </div>
 
-                    <label for="name" class="form__label">
-                        Correo Electronico:
-                    </label>
-                </div>
-            </form>
+            <div class="grupo">
+                <input type="text" name="" id="name" required><span class="barra"></span>
+                <label for="">Codigo</label>
+            </div>
 
-            <form class="form">
-                <div class="form__group">
-                    <input type="text" placeholder=" " class="form__input">
+            <div class="grupo">
+                <input type="email" name="" id="name" required><span class="barra"></span>
+                <label for="">Email</label>
+            </div>
 
-                    <label for="name" class="form__label">
-                        Contraseña
-                    </label>
-                </div>
-            </form>
+            <div class="grupo">
+                <input type="password" name="" id="name" required><span class="barra"></span>
+                <label for="">Contraseña</label>
+            </div>
 
-            <form class="form">
-                <div class="form__group">
-                    <button type="submit" class="form__submit">Iniciar sesion</button>
-                </div>
-            </form>
+            <div class="grupo">
+                <label for="rol">
+                    <select name="roles" id="tuRol">
+                        <option selected disabled>Elige una opción</option>
+                        <option>Jefe de Departamento</option>
+                        <option>Maestro</option>
+                        <option>Presidente de academia (Ingenieria de Software)</option>
+                        <option>Presidente de academia (Programación avanzada)</option>
+                        <option>Presidente de academia (Gestion de datos)</option>
+                        <option>Presidente de academia (Gestion de Tecnologias De Información)</option>
+                    </select>
+                </label>
+            </div>
 
-            <form class="form">
-                <a href="#" class="form__link">¿Olvidaste tu contraseña?</a>
-            </form>
-        </section>
-
-    </main>
-
-    <script src="/js/navbar/app.js"></script>
-
+            <div class="grupo">
+                <button type="submit">Registrarse</button>
+            </div>
+        </div>
+    </form>
 </body>
+
+<script src="/js/navbar/app.js"></script>
+
 </html>
